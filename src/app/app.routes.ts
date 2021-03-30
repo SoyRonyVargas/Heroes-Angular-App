@@ -8,8 +8,7 @@ import { HeroeComponent } from './components/heroe/heroe.component';
 import { SearchComponent } from './components/search/search.component';
 
 const routes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'about', component: AboutComponent },
+    { path: '', component: AboutComponent },
     { path: 'heroes', component: HeroesComponent },
     { path: 'heroe/:id', component: HeroeComponent },
     { path: 'heroes/search/:name', component: SearchComponent },

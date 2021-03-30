@@ -14,9 +14,6 @@
                     <a [routerLink]="['/']" [routerLinkActive]="['active']" class="nav-link"  >Inicio</a>
                 </li>
                 <li class="nav-item" routerLinkActive="active">
-                    <a [routerLink]="['about']" [routerLinkActive]="['active']" class="nav-link" >Acerca</a>
-                </li>
-                <li class="nav-item" routerLinkActive="active">
                     <a [routerLink]="['heroes']" [routerLinkActive]="['active']" class="nav-link">Heroes</a>
                 </li>
             </ul>
@@ -28,7 +25,7 @@
                     #buscarTexto 
                     (keyup.enter)="buscarHeroe(buscarTexto.value)"
                 >
-                <button class="btn btn-outline-success" type="button">Buscar</button>
+                <button (click)="buscarHeroe(buscarTexto.value)" class="btn btn-outline-success" type="button">Buscar</button>
             </form>
         </div>
     </div>
