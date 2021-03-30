@@ -1,0 +1,17 @@
+<div class="row row-cols-1 row-cols-md-3 g-4 my-3">
+    <div class="col" *ngFor="let heroe of heroes">
+        <app-card  [heroe]="heroe"></app-card>
+        <!-- <div class="card h-100">
+            <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+            <div class="card-body">
+                <h5 class="card-title"> {{ heroe.nombre }} </h5>
+                <p class="card-text"> {{ heroe.bio }} </p>
+                <h6 class="card-subtitle mb-2 text-muted"> {{ heroe.aparicion }} </h6>
+                <a [routerLink]="['/heroe', heroe.nombre ]" class="btn btn-outline-secondary">Ver Heroe</a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div> -->
+    </div>
+</div>

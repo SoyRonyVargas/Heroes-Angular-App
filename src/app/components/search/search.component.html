@@ -1,0 +1,12 @@
+<section class="my-3">
+    <h2 class="h2 display-2"> Busqueda por: {{ busqueda }} </h2>
+    <hr>
+    <div class="row row-cols-1 row-cols-md-3 g-4 my-3">
+        <div class="col" *ngFor="let heroe of heroesBusqueda">
+           <app-card [heroe]="heroe" ></app-card>
+        </div>
+        <div class="fluid w-100" *ngIf="heroesBusqueda.length === 0">
+            <h1 class="fluid h1"> 404 - No hay resultados</h1>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+<section class="p-3 bg-light border my-3">
+    <div class="row">
+        <div class="col-md-4">
+            <img [src]="heroe.img" class="border w-100 img-thumbnail" alt="">
+        </div>
+        <div class="col-md-8">
+            <h2> {{ heroe.nombre | uppercase }} </h2>
+            <hr>
+            <h6> Aparición: <span class="badge bg-secondary"> {{ heroe.aparicion | date:'y' }} </span></h6>
+            <p>
+                {{ heroe.bio }}
+            </p>
+            <div [ngSwitch]="heroe.casa">
+                <img style="max-width: 120px;" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" *ngSwitchCase="'Marvel'" alt="">
+                <img style="max-width: 120px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1200px-DC_Comics_logo.svg.png" *ngSwitchCase="'DC'" alt="">
+            </div>
+        </div>
+    </div>
+</section>
