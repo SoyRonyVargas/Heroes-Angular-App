@@ -22,7 +22,9 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/_redirects"
+              "src/_redirects",
+              ".htaccess",
+              "cat-picks/**/*"
             ],
             "styles": [
               "src/styles.css"
